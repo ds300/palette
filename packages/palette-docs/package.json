@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "artsy-palette-docs",
   "description": "Artsy's design system",
   "version": "0.1.0",
@@ -12,6 +13,9 @@
     "start": "yarn develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "type-check": "tsc --pretty --noEmit"
+  },
+  "workspaces": {
+    "nohoist": ["gatsby", "gatsby-*"]
   },
   "husky": {
     "hooks": {
@@ -71,7 +75,7 @@
     "docz-utils": "^0.13.6",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.20",
-    "gatsby-mdx": "^0.3.4",
+    "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-catch-links": "^2.0.10",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-manifest": "^2.0.9",

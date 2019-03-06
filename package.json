@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "concurrently --raw --kill-others 'cd packages/palette && yarn watch' 'cd packages/palette-docs && yarn start'"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
